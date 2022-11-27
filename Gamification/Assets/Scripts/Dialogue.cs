@@ -1,9 +1,10 @@
-using System;
 using TMPro;
 using UnityEngine;
 
 public class Dialogue : MonoBehaviour
 {
+    [SerializeField] private Player player; 
+    
     public string currentText;
     private GameObject _buttonsHolder;
     [SerializeField] private GameObject[] buttons;
@@ -17,7 +18,7 @@ public class Dialogue : MonoBehaviour
         manTalking.text = currentText;
     }
 
-    public void YesItsReal()
+    /*public void YesItsReal()
     {
         manTalking.text = "Хорошо. Сколько это будет стоить?";
         FindNeed("TakeOrder");
@@ -46,16 +47,41 @@ public class Dialogue : MonoBehaviour
         manTalking.text = "Хорошо, давайте поставим мой заказ в приоритет. Увеличиваю стоимость на 10%";
         string[] newButtons = {"TakeOrder+", "WeCant"};
         FindNeed(newButtons);
-    }
+    }*/
 
-    private void FindNeed(string need)
+    /*private void FindNeed(string need)
     {
         foreach (var button in buttons)
         {
             button.SetActive(button.name == need);
         }
+    }*/
+
+    public void OnOffDialogue()
+    {
+        this.gameObject.SetActive(this.gameObject.activeInHierarchy != true);
+    }
+
+    public void Yes()
+    {
+        string[] temp = { "VariantTrue", "VariantFalse" };
+        FindNeed(temp);
+    }
+
+    public void VariantTrue()
+    {
+        string[] temp = {""};
+        FindNeed(temp);
+        manTalking.text = "Да, устроит. Спасибо! Макет сбросил. Тест ИИИИ";
     }
     
+    public void VariantFalse()
+    {
+        player.WrongAnswer();
+        string[] temp = {""};
+        FindNeed(temp);
+        manTalking.text = "Да, устроит. Спасибо! Макет сбросил";
+    }
     private void FindNeed(string[] need)
     {
         bool setActive;
