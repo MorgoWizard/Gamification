@@ -550,6 +550,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4554091582784700114, guid: 020e80c85488e1a48b2796a5b259578e, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554091582784700114, guid: 020e80c85488e1a48b2796a5b259578e, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15200, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 4698456060383345321, guid: 020e80c85488e1a48b2796a5b259578e, type: 3}
       propertyPath: m_Name
       value: Clock
