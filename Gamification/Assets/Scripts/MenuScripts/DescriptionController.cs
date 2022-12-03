@@ -8,6 +8,7 @@ namespace MenuScripts
         [SerializeField] private TypeManager typeManager;
         
         [SerializeField] private TMP_Text descriptionText;
+        [SerializeField] private TMP_Text addressText;
         [SerializeField] private TMP_Dropdown dropdownType;
 
         private void Start()
@@ -23,6 +24,7 @@ namespace MenuScripts
             {
                 if (typeManager.types[i].name == chosenType)
                 {
+                    addressText.text = typeManager.types[i].address;
                     for (int j = 0; j < typeManager.types[i].machines.Length; j++)
                     {
                         description += typeManager.types[i].machines[j].name + "\n";

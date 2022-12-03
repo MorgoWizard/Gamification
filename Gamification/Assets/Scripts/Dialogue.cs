@@ -9,9 +9,13 @@ public class Dialogue : MonoBehaviour
     private GameObject _buttonsHolder;
     [SerializeField] private GameObject[] buttons;
 
+    [SerializeField] private GameObject resultScreen;
+    [SerializeField] private TextMeshProUGUI resultText;
+
     [SerializeField] private TextMeshProUGUI manTalking;
     private void Start()
     {
+        player = GameObject.FindWithTag("Player").GetComponent<Player>();
         _buttonsHolder = GameObject.FindWithTag("Buttons");
         GameObject order = GameObject.FindWithTag("Order");
         currentText = order.GetComponent<Order>().orderText;
@@ -70,17 +74,28 @@ public class Dialogue : MonoBehaviour
 
     public void VariantTrue()
     {
-        string[] temp = {""};
+        string[] temp = {"Result"};
         FindNeed(temp);
-        manTalking.text = "Да, устроит. Спасибо! Макет сбросил. Тест ИИИИ";
+        manTalking.text = "Да, устроит. Спасибо! Макет сбросил";
     }
     
     public void VariantFalse()
     {
         player.WrongAnswer();
-        string[] temp = {""};
+        string[] temp = {"Result"};
         FindNeed(temp);
         manTalking.text = "Да, устроит. Спасибо! Макет сбросил";
+    }
+
+    public void Result()
+    {
+        GameObject[] toOff = GameObject.FindGameObjectsWithTag("ToOff");
+        foreach (var obj in toOff)
+        {
+            obj.SetActive(false);
+        }
+        resultScreen.SetActive(true);
+        resultText.text = "Ваш результат: " + player.ReturnScore() + "/100";
     }
     private void FindNeed(string[] need)
     {

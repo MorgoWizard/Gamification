@@ -14,6 +14,12 @@ public class Player : MonoBehaviour
         _score -= 5*count;
     }
 
+    public int ReturnScore()
+    {
+        return _score;
+    }
+    
+
     private void Start()
     {
         _score = 100;
