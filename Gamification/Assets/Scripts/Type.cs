@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Type : MonoBehaviour
 {
-    public new string name;
+    public new string name, address;
     public Machine[] machines;
 
     private void Start()
