@@ -7,4 +7,9 @@ public class Pizdec : MonoBehaviour
     {
         SceneManager.LoadScene("Office");
     }
+
+    public void PizdecNahuy()
+    {
+        Application.Quit();
+    }
 }
