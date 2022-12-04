@@ -95,7 +95,7 @@ public class Dialogue : MonoBehaviour
             obj.SetActive(false);
         }
         resultScreen.SetActive(true);
-        resultText.text = "Ваш результат: " + player.ReturnScore() + "/100";
+        resultText.text = player.ReturnScore().ToString();
     }
     private void FindNeed(string[] need)
     {
