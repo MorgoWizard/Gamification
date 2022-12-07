@@ -15,11 +15,10 @@ public class DropInTable : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerDrag != null)
+        if (eventData.pointerDrag != null && transform.childCount == 0)
         {
             eventData.pointerDrag.transform.SetParent(transform);
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
-            
         }
     }
 }
