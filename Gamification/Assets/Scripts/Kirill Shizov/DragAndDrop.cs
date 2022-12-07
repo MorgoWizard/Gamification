@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
+    [SerializeField] private Transform parentObject;
     private Canvas canvas;
     
     private CanvasGroup canvasGroup;
@@ -21,7 +22,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     public void OnBeginDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = false;
-        transform.SetParent(canvas.transform);
+        transform.SetParent(parentObject);
     }
     
     public void OnDrag(PointerEventData eventData)
@@ -32,7 +33,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     public void OnEndDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = true;
-        if(transform.parent == canvas.transform)
+        if(transform.parent == parentObject)
             rectTransform.anchoredPosition = originalPosition;
     }
 }
