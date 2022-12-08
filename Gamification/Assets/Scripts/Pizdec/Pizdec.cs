@@ -1,16 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pizdec : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void StartOffice()
     {
-        
+        SceneManager.LoadScene("Office");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PizdecNahuy()
     {
-        
+        Application.Quit();
     }
 }
