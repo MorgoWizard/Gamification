@@ -3,12 +3,12 @@ using TMPro;
 
 public class GameTimer : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _timerText;
-    [SerializeField] private float _timeLimit = 40;
-    private static bool _isRunning = false;
-    private static bool _isTimerRanOut = false;
+    [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private float time;
+    private static bool _isRunning;
+    private static bool _isTimerRanOut;
 
-    private static float _minutes, _seconds, _time;
+    private static float _minutes, _seconds;
     private static float _staticTimeLimit;
     private static GameObject _thisGameObject;
     private void Awake()
@@ -21,34 +21,27 @@ public class GameTimer : MonoBehaviour
         else
             Destroy(this);
 
-        _time = _timeLimit * 60;
-
-        _minutes = Mathf.RoundToInt(_time / 60);
-        _seconds = Mathf.RoundToInt(_time % 60);
-
-        _staticTimeLimit = _timeLimit;
+        _minutes = Mathf.RoundToInt(time / 60);
+        _seconds = Mathf.RoundToInt(time % 60);
     }
     private void FixedUpdate()
     {
-        if (_time < 0.01f)
+        if (time < 0.3f)
         {
-            _time = 0;
+            time = 0;
             Debug.Log("Time is ran out");
             _isTimerRanOut = true;
             return;
         }
 
-        if (_time > 60)
-            _timerText.text = "Осталось " + _minutes + " м " + _seconds + " c";
-        else
-            _timerText.text = "Осталось " + _seconds + " с";
-
         if (_isRunning)
         {
-            _time -= Time.fixedDeltaTime;
-            _minutes = Mathf.RoundToInt(_time / 60);
-            _seconds = Mathf.RoundToInt(_time % 60);
+            time -= Time.fixedDeltaTime;
+            _minutes = Mathf.FloorToInt(time / 60);
+            _seconds = Mathf.FloorToInt(time % 60);
         }
+        
+        timerText.text = $"{_minutes:00}:{_seconds:00}";
     }
     public static void StartTimer(bool isStart)
     {
@@ -57,11 +50,6 @@ public class GameTimer : MonoBehaviour
     public static void PauseTimer(bool isPause)
     {
         _isRunning = isPause;
-    }
-    public static void ResetTimer()
-    {
-        _time = _staticTimeLimit * 60;
-        _isTimerRanOut = false;
     }
     public static bool IsTimerRunOut()
     {
