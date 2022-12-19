@@ -7,12 +7,6 @@ namespace MenuScripts
     public class MenuManager : MonoBehaviour
     {
         [SerializeField] private Menu[] menus;
-        private string _chosenType;
-
-        private void Start()
-        {
-            playButton.SetActive(false);
-        }
 
         public void OpenMenu(string menuName)
         {
@@ -41,21 +35,6 @@ namespace MenuScripts
         private void CloseMenu(Menu menu)
         {
             menu.Close();
-        }
-        
-        //MainMenu
-        public void Play()
-        {
-            SceneManager.LoadScene(_chosenType);
-        }
-        
-        //ChooseType
-        [SerializeField] private TMP_Dropdown chooseTypeList;
-        [SerializeField] private GameObject playButton;
-        public void ChangeType()
-        {
-            _chosenType = chooseTypeList.captionText.text;
-            playButton.SetActive(true);
         }
     }
 }
