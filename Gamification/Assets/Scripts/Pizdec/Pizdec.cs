@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class Pizdec : MonoBehaviour
 {
-    public void StartOffice()
+    public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene("Office");
+        SceneManager.LoadScene(sceneName);
     }
 
     public void PizdecNahuy()

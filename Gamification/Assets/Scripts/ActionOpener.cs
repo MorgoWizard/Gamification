@@ -1,15 +1,8 @@
-using System;
 using UnityEngine;
-
-/*
- * TODO:
- * 1) Повернулся в сторону - открыл экран
- * 2) 
-*/
 
 public class ActionOpener : MonoBehaviour
 {
-    [SerializeField] private Canvas computer, client;
+    [SerializeField] private GameObject computer, dialogue;
 
     private CamControl _camControl;
 
@@ -20,19 +13,12 @@ public class ActionOpener : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("e")) Iteract(transform.rotation);
+        if(Input.GetKeyDown("e")) Interact(transform.rotation);
     }
 
-    private void Iteract(Quaternion quaternion)
+    private void Interact(Quaternion quaternion)
     {
-        if (quaternion.eulerAngles.y < 270)
-        {
-            ChangeActivity(computer.gameObject);
-        }
-        else
-        {
-            ChangeActivity(client.gameObject);
-        }
+        ChangeActivity(quaternion.eulerAngles.y < 270 ? computer : dialogue);
     }
     
     private void ChangeActivity(GameObject obj)
