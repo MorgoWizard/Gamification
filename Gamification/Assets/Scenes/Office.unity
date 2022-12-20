@@ -1293,6 +1293,7 @@ MonoBehaviour:
   - {fileID: 1266778363}
   - {fileID: 1976938249}
   defaultPosition: {fileID: 1483016612}
+  Speed: 0.02
 --- !u!1001 &557016889
 PrefabInstance:
   m_ObjectHideFlags: 0
