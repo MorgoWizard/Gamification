@@ -13,7 +13,7 @@ public class ActionOpener : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("e")) Interact(transform.rotation);
+        if(Input.GetMouseButtonDown(0)) Interact(transform.rotation);
     }
 
     private void Interact(Quaternion quaternion)
