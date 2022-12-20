@@ -11,7 +11,6 @@ public class OnMouseOverInfo : MonoBehaviour, IPointerEnterHandler, IPointerExit
     
     [SerializeField] private RectTransform informationWindow;
     public static Action<string, string> SetTexts;
-    private bool canMoveWindow;
     private Canvas canvas;
 
     private void Awake()
@@ -21,7 +20,6 @@ public class OnMouseOverInfo : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        canMoveWindow = true;
         informationWindow.gameObject.SetActive(true);
         SetTexts?.Invoke(Title,Description);
     }
