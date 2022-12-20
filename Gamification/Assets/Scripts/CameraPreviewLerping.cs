@@ -11,6 +11,8 @@ public class CameraPreviewLerping : MonoBehaviour
     private int positionsAmount;
     private int currentPosition = 0, nextPosition;
     private float timer = 0;
+    float LerpTimer;
+    [SerializeField] float Speed = 1;
 
     private void Awake()
     {
@@ -20,19 +22,24 @@ public class CameraPreviewLerping : MonoBehaviour
     public void moveOnForwardPosition()
     {
         nextPosition = (currentPosition + 1) % positionsAmount;
+        LerpTimer = 0;
     }
 
     public void moveOnPreviousPosition()
     {
-        nextPosition = Mathf.Abs((currentPosition - 1) % positionsAmount);
+        nextPosition = (currentPosition - 1) % positionsAmount;
+        LerpTimer = 0;
+
+        if(nextPosition < 0)
+            nextPosition = positionsAmount - 1;
     }
 
     private void moveToPosition()
     {
-        transform.position = Vector3.MoveTowards(previewPositions[currentPosition].position,
-            previewPositions[nextPosition].position, Time.deltaTime);
-        transform.rotation = Quaternion.RotateTowards(previewPositions[currentPosition].rotation,
-            previewPositions[nextPosition].rotation, Time.deltaTime);
+        transform.position = Vector3.Lerp(this.transform.position,
+            previewPositions[nextPosition].position, LerpTimer*Speed);
+        transform.rotation = Quaternion.Lerp(this.transform.rotation,
+            previewPositions[nextPosition].rotation, LerpTimer*Speed);
         
         currentPosition = nextPosition;
     }
@@ -41,6 +48,7 @@ public class CameraPreviewLerping : MonoBehaviour
     {
         if(transform.position != previewPositions[nextPosition].position)
             moveToPosition();
+            LerpTimer += Time.deltaTime;
     }
 
     public void setPositionToDefault()
