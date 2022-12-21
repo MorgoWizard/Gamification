@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class ActionOpener : MonoBehaviour
 {
-    [SerializeField] private GameObject computer, dialogue;
+    [SerializeField] private GameObject computer, dialogue, box;
 
     private CamControl _camControl;
+    private bool activateBox = true;
 
     private void Start()
     {
@@ -14,6 +15,12 @@ public class ActionOpener : MonoBehaviour
     void Update()
     {
         if(Input.GetMouseButtonDown(0)) Interact(transform.rotation);
+
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            box.SetActive(activateBox);
+            activateBox = !activateBox;
+        }
     }
 
     private void Interact(Quaternion quaternion)
