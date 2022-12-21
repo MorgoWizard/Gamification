@@ -54,6 +54,7 @@ public class CameraPreviewLerping : MonoBehaviour
     public void setPositionToDefault()
     {
         transform.position = defaultPosition.position;
+        transform.rotation = defaultPosition.rotation;
         GetComponent<CameraPreviewLerping>().enabled = false;
     }
 }
