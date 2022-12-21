@@ -5839,7 +5839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5077460842958743976, guid: 8c883d79f35307045a5eacce9d34d733, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5077460842958743980, guid: 8c883d79f35307045a5eacce9d34d733, type: 3}
       propertyPath: m_Pivot.x
@@ -5928,6 +5928,18 @@ PrefabInstance:
     - target: {fileID: 5077460842971535019, guid: 8c883d79f35307045a5eacce9d34d733, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077460842971535022, guid: 8c883d79f35307045a5eacce9d34d733, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077460842971535022, guid: 8c883d79f35307045a5eacce9d34d733, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077460842971535022, guid: 8c883d79f35307045a5eacce9d34d733, type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5077460842971535023, guid: 8c883d79f35307045a5eacce9d34d733, type: 3}
       propertyPath: m_Color.a
