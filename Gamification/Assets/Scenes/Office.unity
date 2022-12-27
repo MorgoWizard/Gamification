@@ -9663,6 +9663,10 @@ PrefabInstance:
       propertyPath: m_Padding.m_Bottom
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7134034473534419466, guid: bc6193add8081cc40b364567b6089e0f, type: 3}
+      propertyPath: time
+      value: 3600
+      objectReference: {fileID: 0}
     - target: {fileID: 7180808428192716512, guid: bc6193add8081cc40b364567b6089e0f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 2
