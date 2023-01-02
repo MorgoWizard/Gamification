@@ -2756,8 +2756,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 257.6, y: -94.6671}
-  m_SizeDelta: {x: 1315.2, y: 689.3342}
+  m_AnchoredPosition: {x: 255, y: -125}
+  m_SizeDelta: {x: 1315, y: 745}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366435542
 MonoBehaviour:
@@ -3382,8 +3382,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4395,6 +4395,7 @@ GameObject:
   - component: {fileID: 696412030}
   - component: {fileID: 696412032}
   - component: {fileID: 696412031}
+  - component: {fileID: 696412033}
   m_Layer: 5
   m_Name: StartPopUp
   m_TagString: Untagged
@@ -4411,8 +4412,8 @@ RectTransform:
   m_GameObject: {fileID: 696412029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 700845028}
   - {fileID: 432402141}
@@ -4421,8 +4422,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.853, y: -49.00003}
-  m_SizeDelta: {x: 1796.7, y: 755}
+  m_AnchoredPosition: {x: 0, y: -85}
+  m_SizeDelta: {x: 1800, y: 820}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &696412031
 MonoBehaviour:
@@ -4462,6 +4463,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696412029}
   m_CullTransparentMesh: 1
+--- !u!95 &696412033
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696412029}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 98424ea6351189c41bd5b915bebeaabc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &700845027
 GameObject:
   m_ObjectHideFlags: 0
