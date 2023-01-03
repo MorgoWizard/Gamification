@@ -4,6 +4,7 @@ using TMPro;
 public class GameTimer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private GameObject finalScreen;
     [SerializeField] private float time;
     private static bool _isRunning;
     private static bool _isTimerRanOut;
@@ -29,8 +30,8 @@ public class GameTimer : MonoBehaviour
         if (time < 0.3f)
         {
             time = 0;
-            Debug.Log("Time is ran out");
             _isTimerRanOut = true;
+            finalScreen.SetActive(true);
             return;
         }
 
