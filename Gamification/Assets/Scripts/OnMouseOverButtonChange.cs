@@ -24,7 +24,7 @@ public class OnMouseOverButtonChange : MonoBehaviour, IPointerEnterHandler, IPoi
     {
         buttonImage.color = selectedColor;
         buttonText.color = selectedTextColor;
-        buttonText.fontStyle = FontStyles.Bold;
+        //buttonText.fontStyle = FontStyles.Bold;
     }
     
     public void OnPointerExit(PointerEventData eventData)

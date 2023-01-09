@@ -7,6 +7,8 @@ TagManager:
   - Order
   - Buttons
   - ToOff
+  - SelectedButton
+  - UnSelectedButton
   layers:
   - Default
   - TransparentFX
