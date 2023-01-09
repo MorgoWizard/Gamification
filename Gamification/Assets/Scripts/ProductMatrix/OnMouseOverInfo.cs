@@ -1,4 +1,5 @@
 using System;
+using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -6,8 +7,8 @@ using UnityEngine.UI;
 
 public class OnMouseOverInfo : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    [SerializeField] private string Title;
-    [SerializeField] private string Description;
+    [CanBeNull][SerializeField] private string Title;
+    [CanBeNull][SerializeField] private string Description;
     
     [SerializeField] private RectTransform informationWindow;
     public static Action<string, string> SetTexts;
@@ -48,7 +49,7 @@ public class OnMouseOverInfo : MonoBehaviour, IPointerEnterHandler, IPointerExit
         else
             upOrDown = 0f;
         
-        movePos = new Vector2(movePos.x + leftOrRight * size.x*2/3f, movePos.y + upOrDown * size.y*2/3f);
+        movePos = new Vector2(movePos.x + leftOrRight * size.x*0.55f, movePos.y + upOrDown * size.y*0.55f);
         informationWindow.transform.position = canvas.transform.TransformPoint(movePos);
     }
 }
