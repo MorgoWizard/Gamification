@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class StoragePopUP : MonoBehaviour
 {
     [SerializeField] private HelpApDis popUpButton;
+    [SerializeField] private string sceneName;
     private void Start()
     {
         popUpButton.ChangeState();
@@ -18,7 +19,7 @@ public class StoragePopUP : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Office");
+            SceneManager.LoadScene(sceneName);
             Cursor.lockState = CursorLockMode.None;
         }
     }
