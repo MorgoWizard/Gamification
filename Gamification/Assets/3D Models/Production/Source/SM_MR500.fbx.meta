@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 888e239ca73cfd340ac519829b863c1a
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_backPanel
+    second: {fileID: 2100000, guid: b512ef2422c68a54ba9a83f4d73a55b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_barometer
+    second: {fileID: 2100000, guid: a8736584005aafa428d522674abb33fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_checkered_steel_plate
+    second: {fileID: 2100000, guid: da66f5a2c40cadd4e8c30dbe4d643f2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_controlPanel_1
+    second: {fileID: 2100000, guid: 5864b18be7b81854880ab404460b4d81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_controlPanel_2
+    second: {fileID: 2100000, guid: 35429560810790249aedd1f92c1f329d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_controlPanel_3
+    second: {fileID: 2100000, guid: 3e4ffe1171d4fa04caed151e307cb462, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_controlPanel_4
+    second: {fileID: 2100000, guid: c1f815890a43327439ac25795dadbb18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_controlPanel_5
+    second: {fileID: 2100000, guid: 46a5d278a9e67d94fa13434280a985e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_controlPanel_6
+    second: {fileID: 2100000, guid: 8470286c15c99de49a06dfb621f4c40a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_frontPanel
+    second: {fileID: 2100000, guid: 6f961b8141cc47944bc746d6e5f19b72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_glass
+    second: {fileID: 2100000, guid: 8df92fd7871b4b94e8b2b0ec1c5710ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_grill_1
+    second: {fileID: 2100000, guid: 42f6f02569cc11c479bc56b3ba598007, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_grill_2
+    second: {fileID: 2100000, guid: 94911176c96aff047bc4251de7d8444e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_metal_bent
+    second: {fileID: 2100000, guid: a196820da0cf16342b58aa7d2f8940f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_metal_bold
+    second: {fileID: 2100000, guid: 4e6e42ef95e918f4083deb0665e6c908, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_metal_chrome
+    second: {fileID: 2100000, guid: 9c7b11d872e6fda4c878ee76bb6de57a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_paint_darkGrey
+    second: {fileID: 2100000, guid: 4b430d9e0979c7a40bb66ff4a9b38237, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_paint_light_gray
+    second: {fileID: 2100000, guid: 6d76b6a1d0e393b428f01a88419be353, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_plastic_black
+    second: {fileID: 2100000, guid: 84bdd61a9689f554f8eb714795c86f20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_plastic_red
+    second: {fileID: 2100000, guid: a90935fc0a1c84340afa035632d389ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_plastic_yellow
+    second: {fileID: 2100000, guid: 144c911a94bc9d345a25888aef8c965b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR500_sidePrint
+    second: {fileID: 2100000, guid: b9f8d98ecd8311646b92e21a626f06db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR_500_paint_white
+    second: {fileID: 2100000, guid: 9b4d4c8d94a60534eb19c66ebb0d6890, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MR_500paint_white
+    second: {fileID: 2100000, guid: 787648ce367533349b1eed7f559990d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__M_MR500_sidePrint
+    second: {fileID: 2100000, guid: 0f0ba49d63bf7324a8d6c4490b4379a4, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
