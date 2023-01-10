@@ -9,6 +9,7 @@ TagManager:
   - ToOff
   - SelectedButton
   - UnSelectedButton
+  - Panel
   layers:
   - Default
   - TransparentFX
