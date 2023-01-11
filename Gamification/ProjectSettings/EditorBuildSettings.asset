@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Storage.unity
     guid: 2d03ee96c0b13e24d86a2c3d06fff8c3
+  - enabled: 1
+    path: Assets/Scenes/Production.unity
+    guid: c27b6d6ecdb8b724ebed71fc2785b700
   m_configObjects: {}
