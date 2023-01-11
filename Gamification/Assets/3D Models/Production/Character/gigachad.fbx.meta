@@ -3,7 +3,12 @@ guid: 77503ee1b20f8204a81d58e6e1cb4ce1
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shirt_MAT
+    second: {fileID: 2100000, guid: 7b15491ff92c4ce40a503a9ebec126f5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
