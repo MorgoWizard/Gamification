@@ -13,6 +13,11 @@ public class Pizdec : MonoBehaviour
             startingHelpPopUp.ChangeState();
     }
 
+    public void Change()
+    {
+        GameObject.FindWithTag("Player").GetComponent<Player>().Pokazh = true;
+    }
+
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
