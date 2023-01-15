@@ -11,17 +11,9 @@ public class GameTimer : MonoBehaviour
 
     private static float _minutes, _seconds;
     private static float _staticTimeLimit;
-    private static GameObject _thisGameObject;
     private void Awake()
     {
-        if (!_thisGameObject)
-        {
-            _thisGameObject = gameObject;
-            DontDestroyOnLoad(this);
-        }
-        else
-            Destroy(this);
-
+        DontDestroyOnLoad(gameObject);
         _minutes = Mathf.RoundToInt(time / 60);
         _seconds = Mathf.RoundToInt(time % 60);
     }
