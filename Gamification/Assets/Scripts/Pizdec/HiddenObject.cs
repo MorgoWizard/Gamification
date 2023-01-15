@@ -3,6 +3,7 @@ using UnityEngine;
 public class HiddenObject : MonoBehaviour
 {
     public GameObject[] hiddenObjects;
+    public GameObject[] toHideObjects;
     public Transform dialoguePosition;
     void Start()
     {
@@ -11,6 +12,10 @@ public class HiddenObject : MonoBehaviour
             foreach (var hiddenObject in hiddenObjects)
             {
                 hiddenObject.SetActive(true);
+            }
+            foreach (var toHide in toHideObjects)
+            {
+                toHide.SetActive(false);
             }
             var playerTransform = transform;
             playerTransform.position = dialoguePosition.position;
