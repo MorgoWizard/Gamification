@@ -23,6 +23,11 @@ public class Pizdec : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void PizdecTiemru()
+    {
+        Destroy(GameObject.FindWithTag("Timer"));
+    }
+
     public void PizdecNahuy()
     {
         Application.Quit();

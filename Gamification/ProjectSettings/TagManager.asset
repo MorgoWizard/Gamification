@@ -10,6 +10,7 @@ TagManager:
   - SelectedButton
   - UnSelectedButton
   - Panel
+  - Timer
   layers:
   - Default
   - TransparentFX
