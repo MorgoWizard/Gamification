@@ -1,16 +1,25 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ProductionEntry : MonoBehaviour
 {
     [SerializeField] private string sceneName;
-    private void OnTriggerStay(Collider other)
+
+    private bool canEnterOnScene;
+   
+    private void OnTriggerEnter(Collider other)
+    {
+        canEnterOnScene = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        canEnterOnScene = false;
+    }
+
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
             SceneManager.LoadScene(sceneName);
     }
-    
 }

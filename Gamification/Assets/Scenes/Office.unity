@@ -2517,6 +2517,7 @@ GameObject:
   - component: {fileID: 362162891}
   - component: {fileID: 362162890}
   - component: {fileID: 362162889}
+  - component: {fileID: 362162893}
   m_Layer: 5
   m_Name: TiemrCanvas
   m_TagString: Untagged
@@ -2583,7 +2584,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &362162892
 RectTransform:
@@ -2606,6 +2607,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &362162893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362162888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5f2b7b74c3186d46a5b8fe12fdb41ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 9024190286982813591}
+  finalScreen: {fileID: 3612020164694969059}
+  time: 3600
 --- !u!1 &386895330
 GameObject:
   m_ObjectHideFlags: 0
@@ -5112,6 +5128,42 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3612020163581257343}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4044713234180348153}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: 18402b9f1aab36e4a93cb188b8bc0248, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4044713234180348152}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: 0541ceda11f647b408cc636f6409aa09, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 719468480}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -13808,7 +13860,6 @@ GameObject:
   - component: {fileID: 5842558119756041422}
   - component: {fileID: 702070847306676983}
   - component: {fileID: 5799051363529787182}
-  - component: {fileID: 7134034472962501676}
   m_Layer: 5
   m_Name: Tiemr
   m_TagString: Untagged
@@ -17196,6 +17247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3612020165268958106}
   - component: {fileID: 3612020165268958109}
+  - component: {fileID: 3612020165268958110}
   m_Layer: 5
   m_Name: FuckGoBack
   m_TagString: Untagged
@@ -17259,18 +17311,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 484387291}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 3612020165268958110}
+        m_TargetAssemblyTypeName: StateChecker, Assembly-CSharp
+        m_MethodName: CameraSwitch
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3612020165268958110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3612020165268958107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304117a5c8620bb4bbcf1e0b8554fa44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueObject: {fileID: 3612020163826136143}
+  camControl: {fileID: 484387291}
 --- !u!1 &3612020165282522504
 GameObject:
   m_ObjectHideFlags: 0
@@ -18363,7 +18429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 218902827945310889, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 218902827945310889, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -18380,7 +18446,7 @@ PrefabInstance:
     - target: {fileID: 218902827945310889, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 3612020165172890685}
+      objectReference: {fileID: 4044713234180348151}
     - target: {fileID: 218902827945310889, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -18394,11 +18460,27 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 218902827945310889, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CameraSwitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 218902827945310889, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 218902827945310889, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: StateChecker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 218902827945310889, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 218902827945310889, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 218902827945310889, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 218902827957006036, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
@@ -19416,6 +19498,47 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 218902827941107757, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
   m_PrefabInstance: {fileID: 4044713234180348148}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4044713234180348150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 218902827945310895, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
+  m_PrefabInstance: {fileID: 4044713234180348148}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4044713234180348151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044713234180348150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304117a5c8620bb4bbcf1e0b8554fa44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueObject: {fileID: 3612020163826136143}
+  camControl: {fileID: 484387291}
+--- !u!114 &4044713234180348152 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 769298576906883574, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
+  m_PrefabInstance: {fileID: 4044713234180348148}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4044713234180348153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 605965469748294089, guid: f980057e1f4cb4a4bb77347044525264, type: 3}
+  m_PrefabInstance: {fileID: 4044713234180348148}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4201973827146166895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19884,7 +20007,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 7134034472962501676}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameTimer, Assembly-CSharp
         m_MethodName: StartTimer
         m_Mode: 6
@@ -21270,21 +21393,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7134034472962501676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13245190404128088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5f2b7b74c3186d46a5b8fe12fdb41ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 9024190286982813591}
-  finalScreen: {fileID: 3612020164694969059}
-  time: 3600
 --- !u!114 &7197774697804714216
 MonoBehaviour:
   m_ObjectHideFlags: 0
