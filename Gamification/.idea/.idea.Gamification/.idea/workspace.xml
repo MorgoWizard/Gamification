@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9c24ad4-503b-405a-a59a-8275c37f2a63" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamification/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamification/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Office.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Office.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameTimer.cs" afterDir="false" />
-    </list>
+    <list default="true" id="b9c24ad4-503b-405a-a59a-8275c37f2a63" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +129,7 @@
       <workItem from="1672160012060" duration="57000" />
       <workItem from="1672826408080" duration="622000" />
       <workItem from="1673384211243" duration="609000" />
-      <workItem from="1673772365349" duration="2003000" />
+      <workItem from="1673772365349" duration="2006000" />
     </task>
     <servers />
   </component>
