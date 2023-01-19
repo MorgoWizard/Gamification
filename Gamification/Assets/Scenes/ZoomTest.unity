@@ -1887,7 +1887,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minScale: 0
-  maxScale: 0.11
+  maxScale: 0.4
+  contentContainer: {fileID: 1530772141}
+  contentWidthMin: 800
+  contentWidthMax: 3500
+  contentHeightMin: 800
+  contentHeightMax: 4000
 --- !u!1 &1270544211
 GameObject:
   m_ObjectHideFlags: 0
