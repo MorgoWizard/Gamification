@@ -19,7 +19,7 @@ public class ProductionEntry : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && canEnterOnScene)
             SceneManager.LoadScene(sceneName);
     }
 }
