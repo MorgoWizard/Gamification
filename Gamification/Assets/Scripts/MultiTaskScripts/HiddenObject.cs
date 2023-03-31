@@ -7,7 +7,7 @@ public class HiddenObject : MonoBehaviour
     public Transform dialoguePosition;
     void Start()
     {
-        if (GameObject.FindWithTag("Player").GetComponent<Player>().Pokazh)
+        if (GameObject.FindWithTag("Player").GetComponent<Player>().showing)
         {
             foreach (var hiddenObject in hiddenObjects)
             {

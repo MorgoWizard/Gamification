@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Pizdec : MonoBehaviour
+public class MultiManager : MonoBehaviour
 {
     [SerializeField] private HelpApDis startingHelpPopUp;
 
@@ -15,7 +15,7 @@ public class Pizdec : MonoBehaviour
 
     public void Change()
     {
-        GameObject.FindWithTag("Player").GetComponent<Player>().Pokazh = true;
+        GameObject.FindWithTag("Player").GetComponent<Player>().showing = true;
     }
 
     public void LoadScene(string sceneName)
@@ -23,12 +23,12 @@ public class Pizdec : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    public void PizdecTiemru()
+    public void DestroyTimer()
     {
         Destroy(GameObject.FindWithTag("Timer"));
     }
 
-    public void PizdecNahuy()
+    public void ApplicationQuit()
     {
         Application.Quit();
     }

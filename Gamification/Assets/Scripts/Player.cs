@@ -5,7 +5,7 @@ public class Player : MonoBehaviour
 {
     private int _score;
 
-    public bool Pokazh;
+    public bool showing;
 
     public void WrongAnswer()
     {
